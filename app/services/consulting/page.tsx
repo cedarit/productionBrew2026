@@ -76,13 +76,13 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      <section className="bg-[var(--foreground)] px-6 py-16">
+      <section className="bg-[var(--accent)] px-6 py-16">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-2xl font-bold text-[var(--background)]">Ready for a fresh set of eyes on your system?</h2>
-            <p className="mt-1 text-[var(--background)]/60">Remote and on-site assessments available across Asia.</p>
+            <h2 className="text-2xl font-bold text-white">Ready for a fresh set of eyes on your system?</h2>
+            <p className="mt-1 text-white/70">Remote and on-site assessments available across Asia.</p>
           </div>
-          <Link href="/contact" className="shrink-0 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--accent-hover)]">
+          <Link href="/contact" className="shrink-0 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--accent)] hover:bg-white/90">
             Book a call
           </Link>
         </div>

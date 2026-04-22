@@ -142,15 +142,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[var(--foreground)] px-6 py-20">
+      <section className="bg-[var(--accent)] px-6 py-20">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <h2 className="text-3xl font-bold text-[var(--background)]">Want to work with us?</h2>
-            <p className="mt-2 text-lg text-[var(--background)]/60">Let's talk about how we can serve your team.</p>
+            <h2 className="text-3xl font-bold text-white">Want to work with us?</h2>
+            <p className="mt-2 text-lg text-white/70">Let's talk about how we can serve your team.</p>
           </div>
           <Link
             href="/contact"
-            className="flex shrink-0 items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white hover:bg-[var(--accent-hover)]"
+            className="flex shrink-0 items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-[var(--accent)] hover:bg-white/90"
           >
             Get in touch <ArrowRight size={14} />
           </Link>

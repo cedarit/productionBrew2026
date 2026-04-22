@@ -109,8 +109,8 @@ export default function Home() {
             Purpose Driven Production
           </span>
           <h1 className="max-w-3xl text-5xl font-bold leading-[1.1] tracking-tight sm:text-6xl lg:text-7xl">
-            Your partner in{" "}
-            <span className="text-[var(--accent)]">everything tech.</span>
+            Your <span className="text-[var(--accent)]">partner</span> in{" "}
+            everything <span className="text-[var(--accent)]">tech.</span>
           </h1>
           <p className="max-w-2xl text-lg leading-relaxed text-[var(--muted)] sm:text-xl">
             From training your volunteers to integrating a full AV system — Production Brew brings expert production
@@ -305,26 +305,26 @@ export default function Home() {
       </section>
 
       {/* ── CONTACT CTA ── */}
-      <section className="bg-[var(--foreground)] px-6 py-24">
+      <section className="bg-[var(--accent)] px-6 py-24">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex flex-col gap-5">
-            <span className="text-xs font-medium uppercase tracking-widest text-[var(--accent)]">Let&apos;s talk</span>
-            <h2 className="text-3xl font-bold tracking-tight text-[var(--background)] sm:text-5xl">
+            <span className="text-xs font-medium uppercase tracking-widest text-white/60">Let&apos;s talk</span>
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
               Ready to brew something great?
             </h2>
-            <p className="max-w-lg text-lg leading-relaxed text-[var(--background)]/60">
+            <p className="max-w-lg text-lg leading-relaxed text-white/70">
               Tell us about your space, your team, and what you&apos;re trying to pull off.
             </p>
           </div>
           <div className="flex shrink-0 flex-col gap-3">
             <Link
               href="/contact"
-              className="flex items-center gap-2 rounded-full bg-[var(--accent)] px-7 py-4 text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-hover)]"
+              className="flex items-center gap-2 rounded-full bg-white px-7 py-4 text-sm font-semibold text-[var(--accent)] transition-colors hover:bg-white/90"
             >
               <Mail size={15} />
               Get in touch
             </Link>
-            <p className="text-center text-xs text-[var(--background)]/40">We respond within 24 hours.</p>
+            <p className="text-center text-xs text-white/50">We respond within 24 hours.</p>
           </div>
         </div>
       </section>
