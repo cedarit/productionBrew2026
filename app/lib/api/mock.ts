@@ -66,7 +66,7 @@ const MOCK_EVENTS: Event[] = [
     startAt: "2026-06-20T09:00:00+05:30",
     endAt: "2026-06-21T18:00:00+05:30",
     timezone: "Asia/Kolkata",
-    location: { venue: "Christ University Auditorium", city: "Bangalore", country: "IN" },
+    location: { venue: "Christ University Auditorium", city: "Hyderabad", country: "IN" },
     coverImageUrl: "https://cdn.productionbrew.com/events/evt_003/cover.jpg",
     price: { amount: 25000, currency: "INR" },
     capacity: 30,

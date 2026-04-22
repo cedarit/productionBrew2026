@@ -73,7 +73,7 @@ export const events: Event[] = [
     category: "training",
     startAt: "2026-06-07T09:00:00+05:30",
     endAt: "2026-06-08T17:00:00+05:30",
-    location: { venue: "The Ark Community Church", city: "Bangalore", country: "IN" },
+    location: { venue: "The Ark Community Church", city: "Hyderabad", country: "IN" },
     coverImage: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80",
     price: { amount: 8000, currency: "INR" },
     capacity: 25,

@@ -7,13 +7,13 @@ const values = [
   { icon: Heart, title: "Purpose over profit", description: "Every decision is filtered through one question: does this serve the mission? We're not here to sell gear — we're here to enable great production." },
   { icon: Zap, title: "Excellence matters", description: "Mediocre production undermines the message. We hold ourselves to a high standard in every training, every system, every event we touch." },
   { icon: Users, title: "Teams first", description: "We design everything — our training, our systems, our support — for the humans who have to operate it. Especially the volunteers." },
-  { icon: Globe, title: "Global perspective", description: "Production challenges in Singapore look different from those in Bangalore or Helsinki. We bring cross-cultural experience to every engagement." },
+  { icon: Globe, title: "Global perspective", description: "Production challenges in Singapore look different from those in Hyderabad or Helsinki. We bring cross-cultural experience to every engagement." },
 ];
 
 const timeline = [
   { year: "2014", title: "First Sunday", description: "Production Brew started as weekend technical support for a single church in Singapore." },
   { year: "2016", title: "First training programme", description: "We formalised our training approach and ran our first multi-church audio workshop." },
-  { year: "2018", title: "India office opens", description: "Growing demand from Indian churches led us to open our second office in Bangalore." },
+  { year: "2018", title: "India office opens", description: "Growing demand from Indian churches led us to open our second office in Hyderabad." },
   { year: "2021", title: "MA Lighting partnership", description: "We became an authorised partner for MA Lighting, expanding our integration capabilities." },
   { year: "2023", title: "International events", description: "Production Brew supported its first international conference — the Pentecostal World Congress in Helsinki." },
   { year: "2026", title: "Today", description: "200+ trained teams, 500+ events, and still driven by the same purpose we started with." },

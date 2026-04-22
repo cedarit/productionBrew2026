@@ -73,7 +73,7 @@ export default function Footer() {
             <div className="flex flex-col gap-3">
               <span className="font-semibold">Locations</span>
               <span className="text-[var(--muted)]">🇸🇬 Singapore</span>
-              <span className="text-[var(--muted)]">🇮🇳 Bangalore, India</span>
+              <span className="text-[var(--muted)]">🇮🇳 Hyderabad, India</span>
             </div>
           </div>
         </div>

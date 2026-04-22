@@ -63,7 +63,7 @@ const locations = [
     flag: "🇸🇬",
   },
   {
-    city: "Bangalore, India",
+    city: "Hyderabad, India",
     description: "Supporting growing production teams across India with training and integration.",
     image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
     flag: "🇮🇳",

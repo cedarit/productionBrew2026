@@ -12,7 +12,7 @@ const offices = [
     description: "Serving churches and organisations across Singapore, Malaysia, and the broader Asia-Pacific region.",
   },
   {
-    city: "Bangalore, India",
+    city: "Hyderabad, India",
     flag: "🇮🇳",
     address: "India Office",
     email: "india@productionbrew.com",
@@ -171,7 +171,7 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-[var(--border)] bg-[var(--accent-subtle)] p-5">
               <p className="text-sm font-medium text-[var(--accent)]">☕ Coffee anyone?</p>
               <p className="mt-1 text-sm text-[var(--muted)]">
-                If you&apos;re in Singapore or Bangalore, we&apos;re always happy to meet in person. Just say the word.
+                If you&apos;re in Singapore or Hyderabad, we&apos;re always happy to meet in person. Just say the word.
               </p>
             </div>
           </div>
