@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MapPin, Clock, Users, CalendarDays, ArrowLeft, CheckCircle2, Tag } from "lucide-react";
 import { events } from "../../lib/data";
+import RegisterModal from "../../_components/RegisterModal";
 
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString("en-SG", { day: "numeric", month: "long", year: "numeric" });
@@ -132,16 +133,15 @@ export default function EventDetailPage({ params }: { params: { slug: string } }
                   This event has ended
                 </div>
               ) : isSoldOut ? (
-                <div className="rounded-xl bg-red-500/10 px-4 py-3 text-center text-sm font-medium text-red-600 dark:text-red-400">
+                <div className="rounded-xl bg-red-500/10 px-4 py-3 text-center text-sm font-medium text-red-400">
                   Sold out — join the waitlist
                 </div>
               ) : (
-                <Link
-                  href="/contact"
-                  className="rounded-full bg-[var(--accent)] px-5 py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[var(--accent-hover)]"
-                >
-                  Register now
-                </Link>
+                <RegisterModal
+                  eventId={event.id}
+                  eventTitle={event.title}
+                  price={event.price}
+                />
               )}
               <p className="text-center text-xs text-[var(--muted-2)]">
                 Questions? <a href="mailto:info@productionbrew.com" className="text-[var(--accent)] hover:underline">Email us</a>
