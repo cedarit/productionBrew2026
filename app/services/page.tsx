@@ -59,26 +59,13 @@ export default function ServicesPage() {
 
       <section className="px-6 pb-24">
         <div className="mx-auto max-w-6xl flex flex-col gap-6">
-          {services.map((s, i) => (
+          {services.map((s) => (
             <Link
               key={s.title}
               href={s.href}
-              className={`group grid items-center gap-8 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 transition-all hover:border-[var(--accent)] hover:shadow-lg ${
-                i % 2 === 0 ? "lg:grid-cols-[auto_1fr]" : "lg:grid-cols-[1fr_auto]"
-              }`}
+              className="group grid items-center gap-8 overflow-hidden rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-8 transition-all hover:border-[var(--accent)] hover:shadow-lg lg:grid-cols-2"
             >
-              {i % 2 !== 0 && (
-                <div className="hidden flex-col gap-3 lg:flex">
-                  <span className="text-xs font-medium uppercase tracking-widest text-[var(--muted-2)]">{s.tagline}</span>
-                  <ul className="grid grid-cols-2 gap-2">
-                    {s.highlights.map((h) => (
-                      <li key={h} className="flex items-center gap-2 text-sm text-[var(--muted)]">
-                        <CheckCircle2 size={13} className="shrink-0 text-[var(--accent)]" /> {h}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+              {/* Left — service info */}
               <div className="flex flex-col gap-4">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--accent-subtle)] text-[var(--accent)]">
                   <s.icon size={22} />
@@ -87,29 +74,22 @@ export default function ServicesPage() {
                   <h2 className="text-2xl font-bold">{s.title}</h2>
                   <p className="mt-2 leading-relaxed text-[var(--muted)]">{s.description}</p>
                 </div>
-                <div className="flex lg:hidden flex-col gap-2">
-                  {s.highlights.map((h) => (
-                    <span key={h} className="flex items-center gap-2 text-sm text-[var(--muted)]">
-                      <CheckCircle2 size={13} className="shrink-0 text-[var(--accent)]" /> {h}
-                    </span>
-                  ))}
-                </div>
                 <span className="flex items-center gap-1.5 text-sm font-medium text-[var(--accent)]">
                   Learn more <ArrowRight size={14} className="transition-transform group-hover:translate-x-0.5" />
                 </span>
               </div>
-              {i % 2 === 0 && (
-                <div className="hidden flex-col gap-3 lg:flex">
-                  <span className="text-xs font-medium uppercase tracking-widest text-[var(--muted-2)]">{s.tagline}</span>
-                  <ul className="grid grid-cols-1 gap-2">
-                    {s.highlights.map((h) => (
-                      <li key={h} className="flex items-center gap-2 text-sm text-[var(--muted)]">
-                        <CheckCircle2 size={13} className="shrink-0 text-[var(--accent)]" /> {h}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+
+              {/* Right — highlights */}
+              <div className="flex flex-col gap-3">
+                <span className="text-xs font-medium uppercase tracking-widest text-[var(--muted-2)]">{s.tagline}</span>
+                <ul className="flex flex-col gap-2">
+                  {s.highlights.map((h) => (
+                    <li key={h} className="flex items-center gap-2 text-sm text-[var(--muted)]">
+                      <CheckCircle2 size={13} className="shrink-0 text-[var(--accent)]" /> {h}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Link>
           ))}
         </div>
